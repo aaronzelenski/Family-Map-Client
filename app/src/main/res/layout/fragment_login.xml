@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:stretchColumns="3"
+        tools:context=".MainActivityfromProf">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/server_host" />
+
+            <EditText
+                android:id="@+id/server_hostField"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="3"
+                android:inputType="text"
+                tools:text="10101011"/>
+
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/server_port" />
+
+            <EditText
+                android:id="@+id/server_portField"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="3"
+                android:inputType="text"
+                tools:text="8080"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/username" />
+
+            <EditText
+                android:id="@+id/usernameField"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="3"
+                android:inputType="text"
+                tools:text="az"/>
+
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/password_toggle"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="3"
+                android:inputType="textPassword"
+                tools:text="10101011"/>
+
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/first_name" />
+
+            <EditText
+                android:id="@+id/first_nameField"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="3"
+                android:inputType="text"
+                tools:text="aaron"/>
+
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/last_name" />
+
+            <EditText
+                android:id="@+id/last_nameField"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="3"
+                android:inputType="text"
+                tools:text="zelenski"/>
+
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/email" />
+
+            <EditText
+                android:id="@+id/emailField"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_span="3"
+                android:inputType="textEmailAddress"
+                tools:text="az@gmail.com"/>
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center_vertical"
+                android:text="@string/gender" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/gender_femaleField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender_female" />
+
+                <RadioButton
+                    android:id="@+id/gender_maleField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender_male" />
+            </RadioGroup>
+
+        </TableRow>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/buttonSignInField"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/sign_in" />
+
+
+            <Button
+                android:id="@+id/buttonRegisterField"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/register" />
+            />
+        </LinearLayout>
+
+
+
+        ></TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
